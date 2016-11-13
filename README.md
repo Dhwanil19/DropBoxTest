@@ -5,7 +5,7 @@ Basic DropBox test cases using Selenium and Java.
 
  1) Eclipse or anyother IDE with maven plugin installed.
 
- 2) Mozilla Firefox Ver : 44. You can download it from https://ftp.mozilla.org/pub/firefox/releases/44.0/ depending on the    machine configuration. 
+ 2) Mozilla Firefox Ver : 44. You can download it from https://ftp.mozilla.org/pub/firefox/releases/44.0/ depending on the    machine configuration and make sure to turn off automatic updates. If any higher version of firefox has been installed , we need to downgrade it to ver 44. Reference https://www.liberiangeek.net/2012/04/how-to-install-previous-versions-of-firefox-in-ubuntu-12-04-precise-pangolin/ .
  
  3) TestNG Plugin installed within eclipse. Refer http://toolsqa.com/selenium-webdriver/install-testng/ if not installed.
  
@@ -19,11 +19,11 @@ Basic DropBox test cases using Selenium and Java.
  
 ## Configuration : 
  
- 1) Make sure you have a dropbox account along with an app. If you account doesn't have an app you can login to you dropbox account and register an app https://www.dropbox.com/developers/apps. 
+ 1) Make sure you have a dropbox account along with an app. If your account doesn't have an app you can login to you dropbox account and register for an app here https://www.dropbox.com/developers/apps. 
  
- 2) After an app has been created we need a unique token to access your dropbox account via selenium test cases. We can retrieve that by going in your created app and clicking on generate button under Generate access token section.
+ 2) After an app has been created , we need a unique token to access your dropbox account via selenium test cases. We can retrieve that by going in your created app and clicking on generate button under Generate access token section.
  
- 3) The main use of this access token is to verify if all the performed operation functionally were actually working from the backend. Test case only verifies if any new files or folders added were actually added , by verifying it by using DBX API's. Apart from this test case doesn't retrieve or manipulate the existing data in your dropbox account.
+ 3) The main use of this access token is to verify if all the performed operations functionally were actually working from the backend. Test case only verifies if any new files or folders added were actually added by verifying it using DBX API's. Apart from this , test case doesn't retrieve or manipulate the existing data in your dropbox account.
  
  4) TestNG.xml in root folder takes 3 parameters : email , password and accessToken generated in previous step. Kindly add it in the value section as follows 
   
