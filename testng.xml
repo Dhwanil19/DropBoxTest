@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="email" value="" />
+	<parameter name="password" value="" />
+	<parameter name="dbxAccessToken" value="" />
+		
+	<test name="Test">
+		<classes>
+			<class name="dropBox.TestLoginLogout" />
+			<class name="dropBox.UploadFileTest" />
+			<class name="dropBox.CreateFolderTest" />
+			<class name="dropBox.RenameFolderTest" />
+			<class name="dropBox.SearchFileTest" />
+			<class name="dropBox.DeleteUploadedFile" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
